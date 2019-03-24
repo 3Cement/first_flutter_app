@@ -19,7 +19,12 @@ class _AuthPageState extends State<AuthPage> {
           title: Text('Login'),
         ),
         body: Container(
-          margin: EdgeInsets.all(20.0),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop) ,
+                  image: AssetImage('assets/background.jpg'))),
+          padding: EdgeInsets.all(20.0),
           child: ListView(
             children: <Widget>[
               TextField(
